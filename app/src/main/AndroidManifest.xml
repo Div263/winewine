@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dr.com.winewine" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="dr.com.winewine.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dr.com.winewine.DisplayCuisineList"
+            android:label="@string/title_activity_display_cuisine_list" >
+        </activity>
+        <activity
+            android:name="dr.com.winewine.DisplayDishesList"
+            android:label="@string/title_activity_display_dishes_list" >
+        </activity>
+        <activity
+            android:name="dr.com.winewine.OthersForm"
+            android:label="@string/title_activity_others_form" >
+        </activity>
+        <activity
+            android:name="dr.com.winewine.WineList"
+            android:label="@string/title_activity_wine_list" >
+        </activity>
+    </application>
+
+</manifest>
