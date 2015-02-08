@@ -32,6 +32,9 @@
             android:name="dr.com.winewine.WineList"
             android:label="@string/title_activity_wine_list" >
         </activity>
+        <activity android:name=".ReviewsForm"
+            android:label="Reviews" >
+        </activity>
     </application>
 
 </manifest>

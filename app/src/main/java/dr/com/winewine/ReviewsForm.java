@@ -1,26 +1,25 @@
 package dr.com.winewine;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-
-public class MainActivity extends Activity {
+/**
+ * Created by ruchadeshmukh on 2/7/15.
+ */
+public class ReviewsForm extends Activity{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void onCreate(Bundle savedInstance){
+        super.onCreate(savedInstance);
+        setContentView(R.layout.reviews_form);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_display_cuisine_list, menu);
         return true;
     }
 
@@ -39,14 +38,4 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void recommendWine(View view){
-
-        Intent intent = new Intent(this, DisplayCuisineList.class);
-        startActivity(intent);
-    }
-
-    public void reviewRecommendation(View view){
-        Intent i = new Intent(MainActivity.this, ReviewsForm.class);
-        startActivity(i);
-    }
 }
